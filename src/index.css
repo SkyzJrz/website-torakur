@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Terapkan font Quicksand untuk semua teks biasa (Kesan lembut & membulat) */
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /* Terapkan font Poppins khusus untuk Judul (Kesan minimalis & bersih) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}

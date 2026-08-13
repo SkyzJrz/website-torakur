@@ -4,12 +4,12 @@ import { products, getWaUrl } from '../data/torakurData';
 // Detail informasi spesifik produk
 const productDetails = {
   1: {
-    ingredients: "Buah Tomat Segar Pilihan, Gula Murni, Air, dan Kapur Sirih.",
+    ingredients: "Buah Tomat Segar Pilihan dan Gula Murni.",
     serving: "Langsung dikonsumsi sebagai cemilan sehat khas Bandungan.",
     producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia"
   },
   2: {
-    ingredients: "Buah Tomat Segar Pilihan, Gula Murni, Air, dan Kapur Sirih.",
+    ingredients: "Buah Tomat Segar Pilihan dan Gula Murni.",
     serving: "Langsung dikonsumsi sebagai cemilan sehat keluarga.",
     producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia"
   },

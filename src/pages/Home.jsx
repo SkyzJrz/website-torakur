@@ -55,7 +55,7 @@ export default function Home({ navigateTo }) {
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-orange-100 max-w-2xl mx-auto font-normal leading-relaxed">
-            Inovasi olahan manisan tomat rasa kurma pertama khas kaki Gunung Merbabu. Diproses higienis, tanpa pengawet buatan, dan penuh cita rasa autentik.
+            Inovasi olahan manisan tomat rasa kurma pertama khas Bandungan. Diproses higienis, tanpa pengawet buatan, dan penuh cita rasa autentik.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">

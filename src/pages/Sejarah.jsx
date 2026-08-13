@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import foto1 from '../assets/foto1.jpeg';
 import foto2 from '../assets/sejarah1.jpeg';
 import foto3 from '../assets/sejarah2.jpeg';
-import fotoPakAdiarso from '../assets/foto-pak-adiarso.jpg';
 
 export default function Sejarah({ navigateTo }) {
   const sejarahImages = [foto1, foto2, foto3];
@@ -88,28 +87,6 @@ export default function Sejarah({ navigateTo }) {
           Produk tersebut mendapat sambutan positif dari masyarakat dan melahirkan merek <strong>Torakur</strong>, yang kini telah dikenal luas sebagai oleh-oleh khas Bandungan. Dengan menggunakan tomat segar berkualitas dari hasil pertanian lokal, Torakur berkomitmen menghasilkan produk yang bermutu tinggi sekaligus mendukung pemberdayaan petani dan potensi pertanian daerah.
         </p>
       </section>
-
-          {/* Profile Pendiri */}
-          <section className="bg-orange-50/60 rounded-3xl p-6 sm:p-8 border border-orange-200/60 flex flex-col sm:flex-row gap-6 items-center">
-            <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shrink-0 shadow-md border-2 border-orange-200">
-        <img 
-          src={fotoPakAdiarso} 
-          alt="Bp. Adiarso - Pengusaha Torakur" 
-          className="w-full h-full object-cover object-top"
-        />
-      </div>
-
-      <div className="space-y-2 text-center sm:text-left">
-        <span className="text-xs font-bold text-[#E65100] uppercase tracking-wider">Pelaku Usaha / Pendiri</span>
-        <h3 className="text-2xl font-bold text-[#800020]">Bp. Adiarso</h3>
-        <p className="text-sm text-gray-600 font-medium">Pengusaha Torakur & Tokoh Masyarakat Bandungan</p>
-        <ul className="text-sm text-gray-700 pt-2 space-y-1">
-          <li>• <strong>1986 - 2008:</strong> Dinas Peternakan dan Perikanan Kab. Semarang</li>
-          <li>• <strong>2008 - 2020:</strong> Lurah Bandungan</li>
-          <li>• Pelaku Usaha UMKM, Petani, dan Penggiat Agrowisata</li>
-        </ul>
-      </div>
-    </section>
 
       {/* Visi & Misi */}
       <div className="grid md:grid-cols-2 gap-6">

@@ -6,34 +6,17 @@ const productDetails = {
   1: {
     ingredients: "Buah Tomat Segar Pilihan, Gula Murni, Air, dan Kapur Sirih.",
     serving: "Langsung dikonsumsi sebagai cemilan sehat khas Bandungan.",
-    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia",
-    highlights: [
-      "Tekstur kenyal dan manis pas mirip kurma asli",
-      "100% Bebas pengawet sintetis dan zat pewarna buatan",
-      "Kemasan kotak praktis & rapi, cocok untuk oleh-oleh"
-    ]
+    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia"
   },
   2: {
     ingredients: "Buah Tomat Segar Pilihan, Gula Murni, Air, dan Kapur Sirih.",
     serving: "Langsung dikonsumsi sebagai cemilan sehat keluarga.",
-    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia",
-    highlights: [
-      "Porsi lebih hemat dan puas untuk konsumsi keluarga",
-      "Kaya akan likopen dan nutrisi alami buah tomat"
-    ]
+    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia"
   },
   3: {
-    // INFORMASI DARI GAMBAR BROSUR SIRUP JAHE "BU NGESTI"
     ingredients: "Jahe, Gula Aren, Gula Pasir, Air, Serai, Kapulaga, Cengkeh, Kayu Manis, Daun Jeruk, Daun Pandan, Vanili, Garam.",
     serving: "Kocok dahulu, tuangkan dalam air panas, bisa tambahkan kopi, susu, atau sesuai selera.",
-    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia",
-    highlights: [
-      "Terbuat dari rempah segar pilihan",
-      "Dapat meredakan mual & muntah",
-      "Mengurangi nyeri sendi & otot",
-      "Membantu mengatasi perut kembung",
-      "Meredakan batuk, serta menghangatkan tubuh"
-    ]
+    producer: "TORAKUR Bandungan, Kab. Semarang, 50614 - Indonesia"
   }
 };
 
@@ -52,20 +35,20 @@ export default function Store() {
     <div className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       
       {/* Page Header */}
-    <div className="text-center space-y-3">
-      <div>
-        <span className="inline-block text-[#E65100] font-bold text-xs tracking-widest uppercase bg-orange-100 px-3.5 py-1.5 rounded-full mb-3 shadow-sm">
-          Katalog Resmi
-        </span>
+      <div className="text-center space-y-3">
+        <div>
+          <span className="inline-block text-[#E65100] font-bold text-xs tracking-widest uppercase bg-orange-100 px-3.5 py-1.5 rounded-full mb-3 shadow-sm">
+            Katalog Resmi
+          </span>
+        </div>
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-[#800020] leading-tight">
+          Toko Online Torakur
+        </h1>
+        <p className="text-gray-500 text-sm sm:text-base max-w-xl mx-auto">
+          Klik kartu produk untuk melihat detail komposisi dan cara penyajian.
+        </p>
+        <div className="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full" />
       </div>
-      <h1 className="text-3xl sm:text-5xl font-extrabold text-[#800020] leading-tight">
-        Toko Online Torakur
-      </h1>
-      <p className="text-gray-500 text-sm sm:text-base max-w-xl mx-auto">
-        Klik kartu produk untuk melihat detail komposisi, khasiat, dan cara penyajian.
-      </p>
-      <div className="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full" />
-    </div>
 
       {/* Grid Products */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,7 +87,7 @@ export default function Store() {
                 onClick={() => openDetail(product)}
                 className="w-full bg-orange-50 hover:bg-orange-100 text-[#E65100] font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors mb-2"
               >
-                Lihat Komposisi & Khasiat →
+                Lihat Komposisi & Detail →
               </button>
               
               <a 
@@ -154,21 +137,6 @@ export default function Store() {
                 <p className="text-[#E65100] font-black text-2xl mt-1">
                   {selectedProduct.price}
                 </p>
-              </div>
-
-              {/* Manfaat / Khasiat */}
-              <div className="space-y-2.5">
-                <h3 className="font-bold text-sm text-gray-800 uppercase tracking-wider">
-                  Manfaat & Khasiat
-                </h3>
-                <ul className="space-y-2">
-                  {(productDetails[selectedProduct.id]?.highlights || []).map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700">
-                      <span className="text-[#E65100] font-bold">✓</span>
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               {/* Komposisi Bahan */}

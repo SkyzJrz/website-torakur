@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Halaman Utama -->
+  <url>
+    <loc>https://torakurbandungan.com/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <!-- Halaman Toko / Katalog -->
+  <url>
+    <loc>https://torakurbandungan.com/store</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Halaman Sejarah -->
+  <url>
+    <loc>https://torakurbandungan.com/sejarah</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
